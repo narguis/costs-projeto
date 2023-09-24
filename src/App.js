@@ -1,9 +1,26 @@
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import Home from './components/pages/Home'
+import Contact from './components/pages/Contact'
+import Company from './components/pages/Company'
+import NewProject from './components/pages/NewProject'
+import Container from './components/layout/Container'
+import Footer from './components/layout/Footer'
+import Navbar from './components/layout/Navbar'
+
 function App(){
     return(
-        <div className="App">
-            <p>Costs</p>
-            <p>Teste</p>
-        </div>
+        <Router>
+            <Navbar/>
+                <Container customClass='min-height'>
+                <Routes>
+                    <Route exact path='/' element={<Home/>}/>
+                    <Route path='/company' element={<Company nome='luis'/>}/>
+                    <Route path='/contact' element={<Contact/>}/>
+                    <Route path='/newproject' element={<NewProject/>}/>
+                </Routes>
+                </Container>
+            <Footer/>
+        </Router>
     )
 }
 
