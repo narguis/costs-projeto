@@ -10,16 +10,21 @@ function Navbar(){
    return(
     <nav className={styles.navbar}>
         <Container>
+        <span  className={styles.logo}>
         <Link to='/'><img src={logo} alt='costs'/></Link>
+        </span>
         <ul className={styles.list}>
             <li className={styles.item}>
                 <Link to='/'>Home</Link>
             </li>
             <li className={styles.item}>
-                <Link to='/company'>Company</Link>
+                <Link to='/projects'>Projetos</Link>
             </li>
             <li className={styles.item}>
-                <Link to='/contact'>Contact</Link>
+                <Link to='/company'>Empresa</Link>
+            </li>
+            <li className={styles.item}>
+                <Link to='/contact'>Contato</Link>
             </li>
         </ul>
 

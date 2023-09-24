@@ -9,6 +9,7 @@
     display: flex;
     list-style: none;
     align-items: center;
+    padding-right: 200px;
 }
 
 
@@ -23,4 +24,8 @@
 
 .item a:hover{
     color: #ffbb33
+}
+
+.logo{
+    padding-left: 10px;
 }
