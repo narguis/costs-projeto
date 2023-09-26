@@ -14,4 +14,4 @@ function Select({ text, name, options, handleOnChange, value }) {
   );
 }
 
-export default Selecter;
+export default Selectera;
